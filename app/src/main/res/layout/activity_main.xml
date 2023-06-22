@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@drawable/paytmgrad">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/paytm_logo" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp">
+
+            <ddw.splash404.paytm_clone.views.CustomBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="SENDER DETAIL"
+                android:textColor="@color/black" />
+
+            <ddw.splash404.paytm_clone.views.CustomRegularEdittext
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/graystrokeinputbg"
+                android:hint="Sender full name"
+                android:inputType="text"
+                android:padding="14dp"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <ddw.splash404.paytm_clone.views.CustomRegularEdittext
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/graystrokeinputbg"
+                android:hint="Sender upi"
+                android:inputType="text"
+                android:padding="14dp"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/spinnerSender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/graystrokeinputbg"
+                android:padding="14dp" />
+
+
+            <ddw.splash404.paytm_clone.views.CustomBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="RECIVER DETAIL"
+                android:textColor="@color/black" />
+
+            <ddw.splash404.paytm_clone.views.CustomRegularEdittext
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/graystrokeinputbg"
+                android:hint="Receiver full name"
+                android:inputType="text"
+                android:padding="14dp"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <ddw.splash404.paytm_clone.views.CustomRegularEdittext
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/graystrokeinputbg"
+                android:hint="Receiver upi"
+                android:inputType="text"
+                android:padding="14dp"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <Spinner
+                android:id="@+id/spinnerReceiver"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/graystrokeinputbg"
+                android:padding="14dp" />
+
+            <ddw.splash404.paytm_clone.views.CustomBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="AMOUNT DETAIL"
+                android:textColor="@color/black" />
+
+            <ddw.splash404.paytm_clone.views.CustomRegularEdittext
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/graystrokeinputbg"
+                android:hint="Amount"
+                android:inputType="number"
+                android:padding="14dp"
+                android:singleLine="true"
+                android:textSize="14sp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_marginTop="18dp"
+                app:cardBackgroundColor="@color/colorAccent"
+                android:layout_height="wrap_content">
+
+                <ddw.splash404.paytm_clone.views.CustomBoldTextView
+                    android:layout_width="match_parent"
+                    android:text="PAY SHOT"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="14dp"
+                    android:gravity="center_horizontal"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>
